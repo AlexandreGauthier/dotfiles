@@ -1,0 +1,82 @@
+add_newline = false
+
+prompt_order = [
+    "caracter",
+    "cmd_duration",
+    "time",
+    "username",
+    "git_branch",
+    "git_commit",
+    "git_state",
+    "git_status",
+    "package",
+    "golang",
+    "java",
+    "julia",
+    "nodejs",
+    "python",
+    "ruby",
+    "rust",
+    "nix_shell",
+    "conda",
+    "custom",
+    "jobs",
+    "battery",
+    "line_break",
+    "directory",
+]
+
+[character]
+symbol = ""
+disabled = true
+
+[cmd_duration]
+min_time = 500
+prefix = ""
+
+[rust]
+symbol = "rustc "
+
+[git_branch]
+prefix = ""
+symbol = "\ue725 "
+
+[git_status]
+ahead = "\uf0da"
+behind = "\uf85d"
+diverged = "[diverged]"
+
+conflicted = " conflicts:"
+conflicted_count.enabled = true
+conflicted_count.style = "italic purple"
+
+stashed = " \uf8d6:"
+stashed_count.enabled = true
+stashed_count.style = "italic purple"
+
+staged = " \uf723:"
+staged_count.enabled = true
+staged_count.style = "italic purple"
+
+untracked = " \ufb12:"
+untracked_count.enabled = true
+untracked_count.style = "italic purple"
+
+modified = " \uf8ea:"
+modified_count.enabled = true
+modified_count.style = "italic purple"
+
+deleted = " \uf1f8:"
+deleted_count.enabled = true
+deleted_count.style = "italic purple"
+
+prefix = ""
+suffix = " "
+style = "purple"
+
+
+[package]
+symbol = "\uf487 "
+
+[nodejs]
+symbol="node "
